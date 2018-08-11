@@ -1,0 +1,30 @@
+{
+    "name": "peal/ios-push-notification",
+    "description": "Ios push notification using aws sns(sort notification system)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammed Minuddin(Peal)",
+            "email": "moinuddin7@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "peal\\iosnotification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "peal\\iosnotification\\IosServiceProvider"
+            ],
+            "aliases": {
+                "IosPush": "peal\\iosnotification\\Facades\\IosPush"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "5.6.*"
+    }
+}
